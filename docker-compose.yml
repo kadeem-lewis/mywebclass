@@ -1,31 +1,31 @@
 version: "3.8"
 
 services:
-    master:
-      image: kaw393939/mywebclass:master
-      deploy:
-        replicas: 2
-      pull_policy: always
-      restart: always
-      ports:
+  master:
+    image: ksl29:master
+    deploy:
+      replicas: 2
+    pull_policy: always
+    restart: always
+    ports:
       - "80-81:80"
-      labels:
-      - 'com.centurylinklabs.watchtower.enable=true'
-    development:
-      build: . 
-      container_name: development
-      pull_policy: always
-      restart: always
-      ports:
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+  development:
+    build: .
+    container_name: development
+    pull_policy: always
+    restart: always
+    ports:
       - "8080:80"
-      volumes:
+    volumes:
       - ./public_html/:/usr/local/apache2/htdocs/
-    watchtower:
-      image: containrrr/watchtower
-      container_name: watchtower
-      restart: always
-      command: '--interval 30 --label-enable --cleanup'
-      volumes:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    command: "--interval 30 --label-enable --cleanup"
+    volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      labels:
-      - 'com.centurylinklabs.watchtower.enable: true'
+    labels:
+      - "com.centurylinklabs.watchtower.enable: true"
