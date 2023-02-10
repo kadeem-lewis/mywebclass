@@ -7,7 +7,7 @@ find a group of 2-3 people by asking on Slack or the discussion board in Canvas 
 needs to complete the assignment, so that each member understands how to set everything up as the team leader. Each team
 member will submit their own GitHub classroom repository. If you have previously done this in class you will need to do
 a "docker compose down" in the folder of the previous project, so that all the services stop and are removed from that
-attempt.  *YOU WILL GET PROBLEMS IF YOU DON'T DO THIS!*
+attempt. _YOU WILL GET PROBLEMS IF YOU DON'T DO THIS!_
 
 To complete this assignment each partner will click the button to accept the assignment and follow the Installation
 instructions below. The first feature(s) that you and your partner(s) will make are to add your names to the readme file
@@ -22,9 +22,12 @@ theirs. The end result is that each partner should have the experience of the te
 
 ### 3. Both Partners ACCEPT THE Assignment GITHUB to create their own GitHub repo, so each person has the chance to do all the steps and practice makes perfect...
 
-1. Partner 1: [kwilliam](https://github.com/kaw393939) <-change to you or your partner
-2. Partner 2: [kwilliam](https://github.com/kaw393939) <-change to you or your partner
-3. Partner 3: Optional
+1. Partner 1: [Kadeem Lewis](https://github.com/kadeem-lewis)
+2. Partner 2: [Justin Diaz](https://github.com/Jad229)
+3. Partner 3: [Grace Burke](https://github.com/GraceBurke-88)
+4. Partner 4: [Leslie Tepale](https://github.com/LeslieTepale)
+5. Partner 5: [Samara Augustin](https://github.com/samaraaugust)
+6. Partner 6: [Livia Loi](https://github.com/viiamie)
 
 Complete this on each partner's repos for this assignment by following the development workflow process bellow. Since
 you are updating just the [readme.md](readme.md) file, you won't see any changes on localhost. But maybe you can
@@ -33,7 +36,6 @@ partners have your readme files updated to show your names and a link to your Gi
 respective GitHub repos into Canvas.
 
 [![Click to Start Assignment](module_content/images/start.png)](https://classroom.github.com/a/xTaOHU_V)
-
 
 # Development Workflow - General process
 
@@ -86,7 +88,7 @@ respective GitHub repos into Canvas.
    in the project directory of your old project.
 5. Startup the docker compose "docker compose up --build -d"
 6. View the master branch version of your project on [localhost](localhost)
-7. View the live site preview "npm start" 
+7. View the live site preview "npm start"
 
 ## Docker Commands
 
@@ -116,4 +118,3 @@ respective GitHub repos into Canvas.
 3. "npm run build" Builds the site using webpack and deploys to public_html and you can see it on localhost:8080 without
    rebuilding the dockerfile manually because of the volume share setup by the docker compose file.
 4. "npm run clean" Deletes anything in the public_html folder.
-
